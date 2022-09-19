@@ -1,0 +1,15 @@
+[package]
+name = "rumoc"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+strip = true
+
+[dependencies]
+regex = "1"
+stop-words = "0.6.2"
+lingua = { version = "1.4.0", default-features = false, features = ["english", "chinese"] }
+unicode-segmentation = "1.9.0"
+clap = { version = "3.2.22", features = ["derive"] }
+arboard = "2.1.1"
